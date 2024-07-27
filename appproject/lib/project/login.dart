@@ -1,9 +1,8 @@
-import 'package:appproject/SQLite/sqlite.dart';
 import 'package:appproject/project/Registration.dart';
 import 'package:appproject/jsonModels/users.dart';
-import 'package:appproject/project/viewProfile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../authentication/auth.dart';
 import 'bottomNav.dart';
 import 'forgot_password.dart';
 
@@ -30,7 +29,7 @@ class _RegistrationState extends State<Login> {
   final db=DatabaseHelper();
 
   void login() async {
-    bool response = await db.login(usernameController.text as AuthModal, passwordController.text);
+    bool response = await db.login(usernameController.text, passwordController.text);
     if (response) {
       Navigator.of(context).push(MaterialPageRoute(builder: (context) => bottom_nav()));
     } else {

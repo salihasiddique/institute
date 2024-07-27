@@ -1,7 +1,6 @@
 
 import 'package:appproject/project/Registration.dart';
 import 'package:appproject/project/about.dart';
-import 'package:appproject/project/edit_profile.dart';
 import 'package:appproject/project/home_page.dart';
 import 'package:appproject/project/viewProfile.dart';
 import 'package:flutter/cupertino.dart';

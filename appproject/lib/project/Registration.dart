@@ -1,7 +1,8 @@
-import 'package:appproject/SQLite/sqlite.dart';
 import 'package:appproject/jsonModels/users.dart';
 import 'package:appproject/project/login.dart';
 import 'package:flutter/material.dart';
+
+import '../authentication/auth.dart';
 void main() {
   runApp(MaterialApp(
     home: Registration(),
